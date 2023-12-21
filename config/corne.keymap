@@ -38,6 +38,15 @@
         };
     };
 
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-caps-word";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            continue-list = <SPACE>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -115,10 +124,10 @@
 
         layer_7 {
             bindings = <
-&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)       &kp LS(Y)      &kp LS(U)  &kp LS(I)    &kp LS(O)   &kp LS(P)      &trans
-&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)       &kp LS(H)      &kp LS(J)  &kp LS(K)    &kp LS(L)   &kp LS(COLON)  &trans
-&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)       &kp LS(N)      &kp LS(M)  &kp LS(LT)   &kp LS(GT)  &kp LS(QMARK)  &trans
-                              &kp LC(X)  &kp LC(V)  &kp LC(BSPC)    &kp LS(SPACE)  &trans     &kp LS(RET)
+&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)       &kp LS(Y)      &kp LS(U)   &kp LS(I)    &kp LS(O)   &kp LS(P)      &trans
+&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)       &kp LS(H)      &kp LS(J)   &kp LS(K)    &kp LS(L)   &kp LS(COLON)  &trans
+&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)       &kp LS(N)      &kp LS(M)   &kp LS(LT)   &kp LS(GT)  &kp LS(QMARK)  &trans
+                              &kp LC(X)  &kp LC(V)  &kp LC(BSPC)    &kp LS(SPACE)  &caps_word  &kp LS(RET)
             >;
         };
     };
