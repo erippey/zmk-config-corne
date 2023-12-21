@@ -88,37 +88,37 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans     &trans          &trans    &trans           &trans                 &kp PERCENT    &kp CARET  &kp N7  &kp N8   &kp N9  &kp COMMA  &trans
+&kp EQUAL  &kp EXCL        &kp LBKT  &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK      &kp PLUS   &kp N4  &kp N5   &kp N6  &kp SEMI   &kp COLON
+&kp LCTRL  &kp LEFT_ARROW  &kp RBKT  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp FSLH       &kp MINUS  &kp N1  &kp N2   &kp N3  &kp RIGHT  &trans
+                                     &kp ENTER        &trans                 &kp BSPC       &kp SPACE  &kp N0  &kp DOT
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans       &kp F1  &kp F2   &kp F3   &kp F4    &trans    &trans  &trans  &trans  &trans  &trans  &tog 4
+&trans       &kp F5  &kp F6   &kp F7   &kp F8    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&bootloader  &kp F9  &kp F10  &kp F11  &kp F12   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans   &kp LALT  &trans    &trans  &trans  &trans
             >;
         };
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Y      &kp U     &kp I      &kp O    &kp P     &tog 5
+&kp LCTRL  &kp A  &kp S  &kp D      &kp F      &kp G        &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B        &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp KP_N1  &kp SPACE  &kp KP_N0    &kp SPACE  &kp BSPC  &kp ENTER
             >;
         };
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)       &kp LS(Y)      &kp LS(U)  &kp LS(I)    &kp LS(O)   &kp LS(P)      &trans
+&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)       &kp LS(H)      &kp LS(J)  &kp LS(K)    &kp LS(L)   &kp LS(COLON)  &trans
+&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)       &kp LS(N)      &kp LS(M)  &kp LS(LT)   &kp LS(GT)  &kp LS(QMARK)  &trans
+                              &kp LC(X)  &kp LC(V)  &kp LC(BSPC)    &kp LS(SPACE)  &trans     &kp LS(RET)
             >;
         };
     };
