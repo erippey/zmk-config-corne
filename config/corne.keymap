@@ -107,10 +107,10 @@
 
         layer_4 {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4    &trans    &trans  &bt BT_NXT  &trans  &trans  &trans  &tog 4
-&trans  &kp F5  &kp F6   &kp F7   &kp F8    &trans    &trans  &bt BT_PRV  &trans  &trans  &trans  &bt BT_CLR
-&trans  &kp F9  &kp F10  &kp F11  &kp F12   &trans    &trans  &trans      &trans  &trans  &trans  &bootloader
-                         &trans   &kp LALT  &trans    &trans  &trans      &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4    &kp C_BRI_UP     &trans  &bt BT_NXT  &trans  &trans  &trans  &tog 4
+&trans  &kp F5  &kp F6   &kp F7   &kp F8    &kp C_BRI_DEC    &trans  &bt BT_PRV  &trans  &trans  &trans  &bt BT_CLR
+&trans  &kp F9  &kp F10  &kp F11  &kp F12   &trans           &trans  &trans      &trans  &trans  &trans  &bootloader
+                         &trans   &kp LALT  &trans           &trans  &trans      &trans
             >;
         };
 
