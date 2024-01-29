@@ -37,6 +37,13 @@
             bindings = <&kp LC(S)>;
             label = "SAVE";
         };
+
+        laptopPassWord: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp N &kp S &kp T &kp A &kp L &kp L &kp LS(L) &kp N1 &kp N &kp U &kp X &kp LPAR &kp RPAR>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -75,7 +82,7 @@
 
             bindings = <
 &kp TAB    &kp RIGHT_ALT  &kp DELETE  &kp BACKSPACE  &kp CAPS   &kp C_VOL_UP    &kp PAGE_UP       &kp HOME        &kp UP_ARROW    &kp END    &tog 4  &kp LEFT_GUI
-&kp LSHFT  &kp INS        &kp LC(S)   &kp LC(Z)      &kp LC(A)  &kp C_VOL_DN    &kp PAGE_DOWN     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &tog 5  &trans
+&kp LSHFT  &kp INS        &kp LC(S)   &kp LC(Z)      &kp LC(A)  &kp C_VOL_DN    &kp PAGE_DOWN     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &tog 5  &laptopPassWord
 &kp LCTRL  &kp LG(LS(S))  &trans      &trans         &trans     &kp C_MUTE      &kp C_PLAY_PAUSE  &kp C_PREV      &kp C_NEXT      &trans     &PSWD   &kp ESCAPE
                                       &kp LGUI       &kp LCTRL  &kp SPACE       &kp SPACE         &trans          &kp RET
             >;
