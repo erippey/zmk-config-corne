@@ -97,7 +97,7 @@
 
             bindings = <
 &trans     &trans    &kp AT             &kp HASH         &kp DLLR               &kp PRCNT        &kp CARET  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE      &kp COMMA  &kp LEFT_GUI
-&trans     &kp EXCL  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp EQUAL        &kp PLUS   &kp AMPERSAND      &kp PIPE          &kp BACKSLASH  &kp STAR   &kp COLON
+&trans     &kp EXCL  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK        &kp PLUS   &kp AMPERSAND      &kp PIPE          &kp BACKSLASH  &kp EQUAL  &kp COLON
 &kp LCTRL  &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp MINUS  &kp UNDER          &kp LT            &kp GT         &kp SLASH  &trans
                                         &trans           &trans                 &kp BACKSPACE    &kp SPACE  &trans             &kp RET
             >;
@@ -106,7 +106,7 @@
         layer_3 {
             bindings = <
 &bootloader  &trans          &trans    &trans           &trans                 &kp PERCENT    &kp CARET  &kp N7  &kp N8   &kp N9  &kp COMMA  &trans
-&trans       &kp EXCL        &kp LBKT  &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp EQUAL      &kp PLUS   &kp N4  &kp N5   &kp N6  &kp ASTRK  &kp COLON
+&trans       &kp EXCL        &kp LBKT  &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK      &kp PLUS   &kp N4  &kp N5   &kp N6  &kp EQUAL  &kp COLON
 &kp LCTRL    &kp LEFT_ARROW  &kp RBKT  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE      &kp MINUS  &kp N1  &kp N2   &kp N3  &kp SLASH  &trans
                                        &kp ENTER        &trans                 &kp BSPC       &kp SPACE  &kp N0  &kp DOT
             >;
@@ -123,10 +123,10 @@
 
         layer_5 {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Y      &kp U     &kp I      &kp O    &kp P     &tog 5
-&kp LCTRL  &kp A  &kp S  &kp D      &kp F      &kp G        &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B        &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp KP_N1  &kp SPACE  &kp KP_N0    &kp SPACE  &kp BSPC  &kp ENTER
+&kp TAB    &kp Q  &kp W  &kp E         &kp R         &kp T        &kp Y      &kp U         &kp I      &kp O    &kp P     &tog 5
+&kp LCTRL  &kp A  &kp S  &kp D         &kp F         &kp G        &kp H      &kp J         &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C         &kp V         &kp B        &kp N      &kp M         &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp NUMBER_1  &kp NUMBER_2  &kp SPACE    &kp SPACE  &kp NUMBER_3  &kp ENTER
             >;
         };
 
