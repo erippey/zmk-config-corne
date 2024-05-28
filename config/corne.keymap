@@ -27,7 +27,7 @@
         PSWD: PSWD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_8 &kp NUMBER_1 &kp NUMBER_6 &kp NUMBER_9 &kp NUMBER_4 &kp NUMBER_9>;
+            bindings = <&kp M &kp A &kp R &kp T &kp I &kp N &kp I &kp SPACE &kp LS(F) &kp R &kp I &kp D &kp A &kp Y &kp S &kp SPACE &kp A &kp R &kp E &kp SPACE &kp A &kp W &kp E &kp S &kp O &kp M &kp E &kp EXCL>;
             label = "PSWD";
         };
 
