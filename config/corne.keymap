@@ -8,6 +8,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&lt { tapping-term-ms = <150>; };
+
 / {
     macros {
         CTRL_C: CTRL_C {
@@ -67,7 +69,7 @@
 
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E      &kp R  &kp T            &kp Y        &kp U  &kp I            &kp O    &kp P     &kp LEFT_GUI
-&mo 6      &kp A  &kp S  &kp D      &kp F  &kp G            &kp H        &kp J  &kp K            &kp L    &kp SEMI  &kp SQT
+&mo 6      &kp A  &kp S  &kp D      &kp F  &kp G            &kp H        &kp J  &kp K            &kp L    &kp SEMI  &kp RIGHT_SHIFT
 &kp LCTRL  &kp Z  &kp X  &kp C      &kp V  &kp B            &kp N        &kp M  &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
                          &kp LC(C)  &mo 3  &kp BACKSPACE    &lt 1 SPACE  &mo 2  &mt RSHFT ENTER
             >;
@@ -96,35 +98,35 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &trans    &kp AT             &kp HASH         &kp DLLR               &kp PRCNT        &kp PLUS   &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE      &kp COMMA  &kp LEFT_GUI
-&trans     &kp EXCL  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK        &kp MINUS  &kp AMPERSAND      &kp PIPE          &kp BACKSLASH  &kp EQUAL  &kp COLON
-&kp LCTRL  &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp CARET  &kp UNDER          &kp LT            &kp GT         &kp SLASH  &trans
+&trans     &trans    &kp AT             &kp HASH         &kp DLLR               &kp PRCNT        &kp CARET  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE      &kp COMMA  &kp LEFT_GUI
+&trans     &kp EXCL  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK        &kp PLUS   &kp AMPERSAND      &kp PIPE          &kp BACKSLASH  &kp EQUAL  &kp COLON
+&kp LCTRL  &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp MINUS  &kp UNDER          &kp LT            &kp GT         &kp SLASH  &trans
                                         &trans           &trans                 &kp BACKSPACE    &kp SPACE  &trans             &kp RET
             >;
         };
 
         layer_3 {
             bindings = <
-&bootloader  &trans          &trans    &trans           &trans                 &kp PERCENT    &kp PLUS   &kp N7  &kp N8   &kp N9  &kp COMMA  &trans
-&trans       &kp EXCL        &kp LBKT  &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK      &kp MINUS  &kp N4  &kp N5   &kp N6  &kp EQUAL  &kp COLON
-&kp LCTRL    &kp LEFT_ARROW  &kp RBKT  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE      &kp CARET  &kp N1  &kp N2   &kp N3  &kp SLASH  &trans
+&bootloader  &trans          &trans    &trans           &trans                 &kp PERCENT    &kp CARET  &kp N7  &kp N8   &kp N9  &kp COMMA  &trans
+&trans       &kp EXCL        &kp LBKT  &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK      &kp PLUS   &kp N4  &kp N5   &kp N6  &kp EQUAL  &kp COLON
+&kp LCTRL    &kp LEFT_ARROW  &kp RBKT  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE      &kp MINUS  &kp N1  &kp N2   &kp N3  &kp SLASH  &trans
                                        &kp ENTER        &trans                 &kp BSPC       &kp SPACE  &kp N0  &kp DOT
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4    &kp C_BRI_UP     &trans  &bt BT_NXT  &trans  &trans  &trans  &tog 4
-&trans  &kp F5  &kp F6   &kp F7   &kp F8    &kp C_BRI_DEC    &trans  &bt BT_PRV  &trans  &trans  &trans  &bt BT_CLR
-&trans  &kp F9  &kp F10  &kp F11  &kp F12   &trans           &trans  &trans      &trans  &trans  &trans  &bootloader
-                         &trans   &kp LALT  &trans           &trans  &trans      &trans
+&trans     &kp F1  &kp F2   &kp F3   &kp F4    &kp C_BRI_UP     &trans  &bt BT_NXT  &trans  &trans  &trans  &tog 4
+&trans     &kp F5  &kp F6   &kp F7   &kp F8    &kp C_BRI_DEC    &trans  &bt BT_PRV  &trans  &trans  &trans  &bt BT_CLR
+&kp LCTRL  &kp F9  &kp F10  &kp F11  &kp F12   &trans           &trans  &trans      &trans  &trans  &trans  &bootloader
+                            &trans   &kp LALT  &trans           &trans  &trans      &trans
             >;
         };
 
         layer_5 {
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E         &kp R         &kp T            &kp Y      &kp U         &kp I      &kp O    &kp P     &tog 5
-&kp LCTRL  &kp A  &kp S  &kp D         &kp F         &kp G            &kp H      &kp J         &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp A  &kp S  &kp D         &kp F         &kp G            &kp H      &kp J         &kp K      &kp L    &kp SEMI  &kp RIGHT_SHIFT
 &kp LSHFT  &kp Z  &kp X  &kp C         &kp V         &kp B            &kp N      &kp M         &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp NUMBER_1  &kp NUMBER_2  &kp BACKSPACE    &kp SPACE  &kp NUMBER_3  &kp ENTER
             >;
