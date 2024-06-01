@@ -98,10 +98,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &trans    &kp AT             &kp HASH         &kp DLLR               &kp PRCNT        &kp CARET  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE      &kp COMMA  &kp LEFT_GUI
-&trans     &kp EXCL  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK        &kp PLUS   &kp AMPERSAND      &kp PIPE          &kp BACKSLASH  &kp EQUAL  &kp COLON
-&kp LCTRL  &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp MINUS  &kp UNDER          &kp LT            &kp GT         &kp SLASH  &trans
-                                        &trans           &trans                 &kp BACKSPACE    &kp SPACE  &trans             &kp RET
+&trans          &trans    &kp AT             &kp HASH         &kp DLLR               &kp PRCNT        &kp CARET  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE      &kp COMMA  &kp LEFT_GUI
+&kp LEFT_SHIFT  &kp EXCL  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK        &kp PLUS   &kp AMPERSAND      &kp PIPE          &kp BACKSLASH  &kp EQUAL  &kp COLON
+&kp LCTRL       &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp MINUS  &kp UNDER          &kp LT            &kp GT         &kp SLASH  &trans
+                                             &trans           &trans                 &kp BACKSPACE    &kp SPACE  &trans             &kp RET
             >;
         };
 
@@ -116,10 +116,10 @@
 
         layer_4 {
             bindings = <
-&trans     &kp F1  &kp F2   &kp F3   &kp F4    &kp C_BRI_UP     &trans  &bt BT_NXT  &trans  &trans  &trans  &tog 4
-&trans     &kp F5  &kp F6   &kp F7   &kp F8    &kp C_BRI_DEC    &trans  &bt BT_PRV  &trans  &trans  &trans  &bt BT_CLR
-&kp LCTRL  &kp F9  &kp F10  &kp F11  &kp F12   &trans           &trans  &trans      &trans  &trans  &trans  &bootloader
-                            &trans   &kp LALT  &trans           &trans  &trans      &trans
+&trans          &kp F1  &kp F2   &kp F3   &kp F4    &kp C_BRI_UP     &trans  &bt BT_NXT  &trans  &trans  &trans  &tog 4
+&kp LEFT_SHIFT  &kp F5  &kp F6   &kp F7   &kp F8    &kp C_BRI_DEC    &trans  &bt BT_PRV  &trans  &trans  &trans  &bt BT_CLR
+&kp LCTRL       &kp F9  &kp F10  &kp F11  &kp F12   &trans           &trans  &trans      &trans  &trans  &trans  &bootloader
+                                 &trans   &kp LALT  &trans           &trans  &trans      &trans
             >;
         };
 
