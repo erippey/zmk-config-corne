@@ -46,6 +46,13 @@
             bindings = <&kp LS(I) &kp N &kp S &kp T &kp A &kp L &kp L &kp LS(L) &kp N1 &kp N &kp U &kp X &kp LPAR &kp RPAR>;
             label = "NEW_MACRO";
         };
+
+        Fancy_Zone: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RG(RS(GRAVE))>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -134,10 +141,10 @@
 
         layer_7 {
             bindings = <
-&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)       &kp LS(Y)      &kp LS(U)   &kp LS(I)    &kp LS(O)   &kp LS(P)      &trans
-&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)       &kp LS(H)      &kp LS(J)   &kp LS(K)    &kp LS(L)   &kp LS(COLON)  &kp RS(SQT)
-&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)       &kp LS(N)      &kp LS(M)   &kp LS(LT)   &kp LS(GT)  &kp LS(QMARK)  &trans
-                              &kp LC(X)  &kp LC(V)  &kp LC(BSPC)    &kp LS(SPACE)  &caps_word  &kp LS(RET)
+&Fancy_Zone  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)       &kp LS(Y)      &kp LS(U)   &kp LS(I)    &kp LS(O)   &kp LS(P)      &trans
+&trans       &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)       &kp LS(H)      &kp LS(J)   &kp LS(K)    &kp LS(L)   &kp LS(COLON)  &kp RS(SQT)
+&trans       &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)       &kp LS(N)      &kp LS(M)   &kp LS(LT)   &kp LS(GT)  &kp LS(QMARK)  &trans
+                                   &kp LC(X)  &kp LC(V)  &kp LC(BSPC)    &kp LS(SPACE)  &caps_word  &kp LS(RET)
             >;
         };
     };
