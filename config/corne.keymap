@@ -25,7 +25,6 @@
             #binding-cells = <0>;
             bindings = <&threefiveseven &threefiveseven &threefiveseven &threefiveseven &threefiveseven &threefiveseven>;
             label = "XTWO";
-            wait-ms = <675>;
         };
 
         xfour: xfour {
@@ -105,7 +104,7 @@
             bindings = <
 &trans          &trans    &kp AT             &kp MINUS        &kp GRAVE              &kp PRCNT        &kp CARET  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp DOLLAR     &kp COMMA  &kp LEFT_GUI
 &kp LEFT_SHIFT  &kp EXCL  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK        &kp PLUS   &kp AMPERSAND      &kp PIPE          &kp BACKSLASH  &kp EQUAL  &kp COLON
-&kp LCTRL       &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp HASH   &kp UNDER          &kp LT            &kp GT         &kp SLASH  &xeight
+&kp LCTRL       &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp HASH   &kp UNDER          &kp LT            &kp GT         &kp SLASH  &xtwo
                                              &trans           &trans                 &kp BACKSPACE    &kp SPACE  &trans             &kp RET
             >;
         };
