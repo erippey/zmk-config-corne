@@ -108,7 +108,7 @@
             bindings = <
 &trans          &trans    &kp AT             &kp MINUS        &kp GRAVE              &kp PRCNT        &kp CARET  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp DOLLAR     &kp COMMA  &kp LEFT_GUI
 &kp LEFT_SHIFT  &kp EXCL  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK        &kp PLUS   &kp AMPERSAND      &kp PIPE          &kp BACKSLASH  &kp EQUAL  &kp COLON
-&kp LCTRL       &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp HASH   &kp UNDER          &kp LT            &kp GT         &kp SLASH  &xsixtyfour
+&kp LCTRL       &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp HASH   &kp UNDER          &kp LT            &kp GT         &kp SLASH  &threefiveseven
                                              &trans           &trans                 &kp BACKSPACE    &kp SPACE  &trans             &kp RET
             >;
         };
