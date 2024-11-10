@@ -25,6 +25,13 @@
             bindings = <&kp LCTRL &kp V>;
             label = "CTRL_V";
         };
+
+        fivethreeone: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -79,7 +86,7 @@
             bindings = <
 &trans          &trans    &kp AT             &kp MINUS        &kp GRAVE              &kp PRCNT        &kp CARET  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp DOLLAR     &kp COMMA  &kp LEFT_GUI
 &kp LEFT_SHIFT  &kp EXCL  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK        &kp PLUS   &kp AMPERSAND      &kp PIPE          &kp BACKSLASH  &kp EQUAL  &kp COLON
-&kp LCTRL       &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp HASH   &kp UNDER          &kp LT            &kp GT         &kp SLASH  &trans
+&kp LCTRL       &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp HASH   &kp UNDER          &kp LT            &kp GT         &kp SLASH  &fivethreeone
                                              &trans           &trans                 &kp BACKSPACE    &kp SPACE  &trans             &kp RET
             >;
         };
