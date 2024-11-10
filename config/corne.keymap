@@ -29,8 +29,53 @@
         fivethreeone: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1>;
+            bindings =
+                <&macro_tap_time 45>,
+                <&kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1 &kp N5 &kp N3 &kp N1>;
+
             label = "NEW_MACRO";
+        };
+
+        xtwo: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&fivethreeone &fivethreeone>;
+            label = "NEW_MACRO";
+        };
+
+        xfour: xfour {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&xtwo &xtwo>;
+            label = "XFOUR";
+        };
+
+        xeight: xeight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&xfour &xfour>;
+            label = "XEIGHT";
+        };
+
+        xsixteen: xsixteen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&xeight &xeight>;
+            label = "XSIXTEEN";
+        };
+
+        xthirtytwo: xthirtytwo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&xsixteen &xsixteen>;
+            label = "XTHIRTYTWO";
+        };
+
+        xsixtyfour: xsixtyfour {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&xthirtytwo &xthirtytwo>;
+            label = "XSIXTYFOUR";
         };
     };
 
