@@ -15,9 +15,9 @@
         threefiveseven: threefiveseven {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N3 &kp N5 &kp N1 &kp N3 &kp N5 &kp N1 &kp N3 &kp N5 &kp N1 &threefiveseven>;
+            bindings = <&kp N3 &kp N5 &kp N1 &kp N3 &kp N5 &kp N1 &kp N3 &kp N5 &kp N1>;
             label = "THREEFIVESEVEN";
-            wait-ms = <65>;
+            wait-ms = <75>;
         };
 
         xtwo: xtwo {
@@ -25,6 +25,7 @@
             #binding-cells = <0>;
             bindings = <&threefiveseven &threefiveseven &threefiveseven &threefiveseven &threefiveseven &threefiveseven>;
             label = "XTWO";
+            wait-ms = <675>;
         };
 
         xfour: xfour {
@@ -32,6 +33,7 @@
             #binding-cells = <0>;
             bindings = <&xtwo &xtwo &xtwo &xtwo &xtwo &xtwo>;
             label = "XFOUR";
+            wait-ms = <4050>;
         };
 
         xsix: xsix {
@@ -39,6 +41,7 @@
             #binding-cells = <0>;
             bindings = <&xfour &xfour &xfour &xfour &xfour &xfour>;
             label = "XSIX";
+            wait-ms = <24300>;
         };
 
         xeight: xeight {
@@ -46,13 +49,7 @@
             #binding-cells = <0>;
             bindings = <&xsix &xsix &xsix &xsix &xsix &xsix>;
             label = "XEIGHT";
-        };
-
-        xsixteen: xsixteen {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&xeight &xeight &xeight &xeight &xeight &xeight>;
-            label = "XSIXTEEN";
+            wait-ms = <145800>;
         };
     };
 
@@ -108,7 +105,7 @@
             bindings = <
 &trans          &trans    &kp AT             &kp MINUS        &kp GRAVE              &kp PRCNT        &kp CARET  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp DOLLAR     &kp COMMA  &kp LEFT_GUI
 &kp LEFT_SHIFT  &kp EXCL  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK        &kp PLUS   &kp AMPERSAND      &kp PIPE          &kp BACKSLASH  &kp EQUAL  &kp COLON
-&kp LCTRL       &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp HASH   &kp UNDER          &kp LT            &kp GT         &kp SLASH  &threefiveseven
+&kp LCTRL       &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp HASH   &kp UNDER          &kp LT            &kp GT         &kp SLASH  &xeight
                                              &trans           &trans                 &kp BACKSPACE    &kp SPACE  &trans             &kp RET
             >;
         };
