@@ -12,18 +12,10 @@
 
 / {
     macros {
-        threefiveseven: threefiveseven {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N3 &kp N5 &kp N1 &kp N3 &kp N5 &kp N1 &kp N3 &kp N5 &kp N1>;
-            label = "THREEFIVESEVEN";
-            wait-ms = <75>;
-        };
-
         xtwo: xtwo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&threefiveseven &threefiveseven &threefiveseven &threefiveseven &threefiveseven &threefiveseven>;
+            bindings = <&click1356 &click1356 &click1356 &click1356 &click1356 &click1356>;
             label = "XTWO";
         };
 
@@ -32,7 +24,6 @@
             #binding-cells = <0>;
             bindings = <&xtwo &xtwo &xtwo &xtwo &xtwo &xtwo>;
             label = "XFOUR";
-            wait-ms = <4050>;
         };
 
         xsix: xsix {
@@ -40,7 +31,6 @@
             #binding-cells = <0>;
             bindings = <&xfour &xfour &xfour &xfour &xfour &xfour>;
             label = "XSIX";
-            wait-ms = <24300>;
         };
 
         xeight: xeight {
@@ -48,7 +38,13 @@
             #binding-cells = <0>;
             bindings = <&xsix &xsix &xsix &xsix &xsix &xsix>;
             label = "XEIGHT";
-            wait-ms = <145800>;
+        };
+
+        click1356: click1356 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N3 &kp N5 &kp N6 &kp N1 &kp N3 &kp N5 &kp N6>;
+            label = "CLICK1356";
         };
     };
 
@@ -104,7 +100,7 @@
             bindings = <
 &trans          &trans    &kp AT             &kp MINUS        &kp GRAVE              &kp PRCNT        &kp CARET  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp DOLLAR     &kp COMMA  &kp LEFT_GUI
 &kp LEFT_SHIFT  &kp EXCL  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp ASTRK        &kp PLUS   &kp AMPERSAND      &kp PIPE          &kp BACKSLASH  &kp EQUAL  &kp COLON
-&kp LCTRL       &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp HASH   &kp UNDER          &kp LT            &kp GT         &kp SLASH  &xtwo
+&kp LCTRL       &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp TILDE        &kp HASH   &kp UNDER          &kp LT            &kp GT         &kp SLASH  &xfour
                                              &trans           &trans                 &kp BACKSPACE    &kp SPACE  &trans             &kp RET
             >;
         };
