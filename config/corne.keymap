@@ -12,20 +12,6 @@
 
 / {
     macros {
-        CTRL_C: CTRL_C {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp C>;
-            label = "CTRL_C";
-        };
-
-        CTRL_V: CTRL_V {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp V>;
-            label = "CTRL_V";
-        };
-
         fivethreeone: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
